@@ -4,6 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 import Team from "./components/Team";
+import Dashboard from "./components/Dashboard";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CurrentLocation from "./components/CurrentLocation";
 
@@ -49,6 +50,7 @@ function App() {
               <Route path="team" element={<Team />} />
             </Route>
             <Route path="/contact" element={<Contact />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
         </div>
