@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 import Team from "./components/Team";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import CurrentLocation from "./components/CurrentLocation";
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
             </li>
           </ul>
         </nav>
+
+        <CurrentLocation />
+
         <div className="container mx-auto p-8">
           <Routes>
             <Route path="/" element={<Home />} />
