@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
 import Team from "./components/Team";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -44,6 +45,7 @@ function App() {
               <Route path="team" element={<Team />} />
             </Route>
             <Route path="/contact" element={<Contact />} />
+            <Route path="/*" element={<NotFound />} />
           </Routes>
         </div>
       </div>
