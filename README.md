@@ -48,11 +48,6 @@ npm install
 npm run dev
 ```
 
-4. Build for production:
-```sh
-npm run build
-```
-
 ## Project Structure
 
 ```
