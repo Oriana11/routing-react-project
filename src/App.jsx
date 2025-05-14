@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-100">
-        <nav className="bg-custom-blue p-8">
+        <nav className="bg-custom-blue p-8 relative z-50">
           <ul className="flex justify-center space-x-6">
             <li>
               <Link
@@ -41,9 +41,11 @@ function App() {
           </ul>
         </nav>
 
-        <CurrentLocation />
+        <div className="relative z-40">
+          <CurrentLocation />
+        </div>
 
-        <div className="container mx-auto p-8">
+        <div className="container mx-auto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />}>

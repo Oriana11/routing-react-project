@@ -6,21 +6,35 @@ function Home() {
 
   const handleLogin = () => {
     navigate("/dashboard");
-  }
-  return (
-    <div className="flex flex-col items-center justify-center min-h-[80vh] text-center">
-      <h1 className="text-4xl font-bold text-gray-800 mb-4">
-        Welcome to the Home Page
-      </h1>
-      <p className="text-lg text-gray-600 max-w-2xl">
-        This is the home page of our application.
-      </p>
+  };
 
-       <button 
-         onClick={handleLogin}
-         className="text-lg max-w-2xl bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-700 transition duration-300 mt-8">
-        Login
-      </button>
+  return (
+    <div className="fixed top-32 inset-x-0 bottom-0 z-0">
+      {/* Hero image section */}
+      <div className="absolute inset-0">
+        <img
+          src="/images/main-image.png"
+          alt="Hero background"
+          className="w-full h-full object-cover object-left"
+        />
+      </div>
+
+      {/* Content overlay */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50">
+        <h1 className="text-4xl font-bold text-white mb-4">
+          Welcome to the Home Page
+        </h1>
+        <p className="text-lg text-white max-w-2xl">
+          This is the home page of our application.
+        </p>
+
+        <button
+          onClick={handleLogin}
+          className="text-lg max-w-2xl bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-700 transition duration-300 mt-8"
+        >
+          Login
+        </button>
+      </div>
     </div>
   );
 }
