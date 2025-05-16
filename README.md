@@ -1,6 +1,7 @@
 # Nature Website - React Router Navigation Demo
 
-![image](https://github.com/user-attachments/assets/8e2d8f65-4a0e-44b2-8b0d-6b6b4b8ae96c)
+![image](https://github.com/user-attachments/assets/f4a9cb9b-3af2-40b8-9ab0-3b5eeecd3a8e)
+
 
 
 A modern React application demonstrating route handling and navigation using React Router v7. The project features a clean, responsive UI built with Tailwind CSS.
@@ -24,7 +25,8 @@ A modern React application demonstrating route handling and navigation using Rea
 - **Contact Form**: Styled form with input validation
 - **Dashboard**: Protected route accessed after login
 
-  ![routing-nature-website](https://github.com/user-attachments/assets/11d913ca-0e3a-4bea-a3c5-f288c1f6b489)
+
+![chrome_qMBwgAj12h](https://github.com/user-attachments/assets/2da175f1-cb38-45ad-8a54-a7bb3ee4575f)
 
 
 ## Technical Stack
